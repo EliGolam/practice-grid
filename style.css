@@ -11,7 +11,7 @@
     --fontweight-normal: 400;
     --fontweight-large: 600;
 
-    --fontsize-small: 1.1rem;
+    --fontsize-small: 0.9rem;
     --fontsize-normal: 1.3rem;
     --fontsize-large: 2rem;
     --fontsize-title: 3rem;
@@ -105,9 +105,18 @@ h3 {
 }
 
 /* Utilities */
-.flex {
+.profile {
+    /* display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 1rem; */
     display: flex;
-    gap: var(--gap);
+    align-items: center;
+    gap: 1rem;
+}
+
+.profile > div:first-of-type {
+    min-width: 4rem;
 }
 
 .flow > *:where(:not(:first-child)) {
@@ -151,6 +160,11 @@ h3 {
 
 /* Grid elements */
 .cat-grid {
+    display: grid;
+    /* RECOMMENDED: for Grid it is recommented to use gap over margin when it comes to space between grid elements */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+
     padding-block: 2rem;
     margin-inline: auto;
 }
@@ -186,4 +200,28 @@ h3 {
 .cat > p:last-of-type {
     opacity: 0.7;
     font-size: var(--fontsize-small);
+}
+
+/* Grid fixes */
+.grid-col-span-2 {
+    grid-column: span 2;    
+}
+
+.grid-row-span-2 {
+    grid-row: span 2;
+}
+
+/* Media queries for screen size */
+@media (max-width: 900px) {
+    .cat-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-col-span-2 {
+        grid-column: span 1;
+    }
+
+    .grid-row-span-2 {
+        grid-row: span 1;
+    }
 }
