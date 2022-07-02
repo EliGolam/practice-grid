@@ -11,10 +11,10 @@
     --fontweight-normal: 400;
     --fontweight-large: 600;
 
-    --fontsize-small: 0.6rem;
-    --fontsize-normal: 1rem;
-    --fontsize-large: 1.6rem;
-    --fontsize-title: 2.2rem;
+    --fontsize-small: 1.1rem;
+    --fontsize-normal: 1.3rem;
+    --fontsize-large: 2rem;
+    --fontsize-title: 3rem;
 
     --gap: 1rem;
     --flow-spacer: 1em;
@@ -166,6 +166,24 @@ h3 {
     background-repeat: no-repeat;
     background-position: top right 10%;
     background-size: 12rem;
-    background-blend-mode: lighten;
 }
 
+.cat .name {
+    font-size: var(--fontsize-large);
+    font-weight: var(--fontweight-large);
+    line-height: 1.2;
+}
+
+.cat .details {
+    opacity: 0.7;
+}
+
+.cat > p:first-of-type {
+    line-height: 1.5;
+    font-weight: var(--fontweight-large);
+}
+
+.cat > p:last-of-type {
+    opacity: 0.7;
+    font-size: var(--fontsize-small);
+}
