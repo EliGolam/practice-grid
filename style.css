@@ -80,6 +80,8 @@ body {
     text-rendering: optimizeSpeed;
     line-height: 1.5;
 
+    padding: 3rem;
+
     background-color: hsl(var(--clr-neutral-100));
 
     /* Display GRID */
@@ -112,6 +114,50 @@ h3 {
     margin-top: var(--flow-spacer);
 }
 
+/* Backgrounds */
 .primary-background {
     background: hsl(var(--clr-primary));
 }
+
+.secondary-background-a {
+    background: hsl(var(--clr-secondary-a));
+}
+
+.secondary-background-b {
+    background: hsl(var(--clr-secondary-b));
+}
+
+.neutral-background {
+    background: hsl(var(--clr-neutral-200));
+}
+
+/* Font colours */
+.text-neutral {
+    color: hsl(var(--clr-neutral-100));
+}
+
+.text-secondary {
+    color: hsl(var(--clr-secondary-b));
+}
+
+/* Image styling */
+.photo {
+    width: 8rem;
+    aspect-ratio: 1;
+    border-radius: 50%;
+
+    border: 5px solid hsl(var(--clr-primary));
+}
+
+/* Grid elements */
+.cat-grid {
+    padding-block: 2rem;
+    margin-inline: auto;
+}
+
+.cat {
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 2.5rem 4rem 3rem -3rem hsl(var(--clr-secondary-a) / 0.25);
+}
+
