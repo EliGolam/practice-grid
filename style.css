@@ -76,7 +76,7 @@ select {
 
 /* Set default BODY styling */
 body {
-    min-height: 100vh;
+    min-height: calc (100vh - 40px);
     text-rendering: optimizeSpeed;
     line-height: 1.5;
 
@@ -84,8 +84,6 @@ body {
 
     background-color: hsl(var(--clr-neutral-100));
 
-    /* Display GRID */
-    display: grid;
     place-content: center;
 
     /* fonts */
